@@ -435,3 +435,88 @@ aside{
     width: 100%;
     margin-bottom: 1rem;
 }
+/*NAV*/
+
+
+nav hr{
+    border: 1px solid #ddd;
+    background-color: #eee;
+    height: 3px;
+    grid-column: 1/-1;
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.nav-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr) 1.25fr;
+    margin: 3rem 4rem;
+}
+nav::after{
+    content: '';
+    display: block;
+    width: calc(100%-8rem);
+    background-color: #ccc;
+    height: 1px;
+    margin: 0 4rem;
+}
+
+.nav-title{
+    grid-column: 1/-2;
+}
+.nav-title{
+    width: 180px;
+    margin-bottom: 1.5rem;
+}
+.go-home{
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #444;
+    text-decoration: none;
+}
+
+.column-title{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    line-height: 1.5em;
+    font-size: 14px;
+    color: black;
+}
+.nav-links a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-subscribe{
+    position: relative;
+    padding-left: 0.5rem;
+}
+.nav-subscribe::before{
+    content: '';
+    background-color: #ccc;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left: 0;
+}
+.nav-links .nav-bold{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-links .line::before{
+    content: '';
+    display: block;
+    width: 80%;
+    background-color: #ccc;
+    height: 1px;
+    margin: 0.5rem 0;
+
+}
