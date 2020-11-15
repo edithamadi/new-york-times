@@ -108,3 +108,11 @@ header{
 header button:hover{
     cursor: pointer;
 }  
+
+/*Section*/
+section hr{
+    position: fixed;
+    top: 1.9rem;
+    width: 100%;
+    opacity: 0.4;
+}
